@@ -11,13 +11,13 @@
 // Rename the credentials.sample.h file to credentials.h and
 // edit it according to your router configuration
 #include "credentials.h"
-fauxmoESP fauxmo;
+fauxmoESP fauxmo; // Initialize Object 
 
 // -----------------------------------------------------------------------------
 
 #define SERIAL_BAUDRATE     115200
 #define servo_pin           2
-#define ID                  "lamp"
+#define ID                  "lamp" // Name Alexa Recognizes
 
 Servo myservo; //Servo Object
 int pos = 0;
@@ -78,6 +78,7 @@ void setup() {
   // Add virtual devices
   fauxmo.addDevice(ID);
 
+  // Below Function only triggered if Alexa receives the command
   fauxmo.onSetState([](unsigned char device_id, const char * device_name, bool state, unsigned char value) {
 
     // Callback when a command from Alexa is received.
