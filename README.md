@@ -1,6 +1,6 @@
 # Voice Controlled Light Switch
 ![alt text](https://github.com/nslewis/Voice-Controlled-Light-Switch/blob/main/Light_Switch.jpg)
-Using an ESP8266 connected to Alexa, we can control a servo which turns the light switch on or off. 
+Using an ESP8266 connected to Alexa, we can control a servo which turns the light switch on or off. Light switch is connected to the servo arm using zipties. Looking to 3D print a fixture in the future to make it cleaner and more reliable. 
 
 ## Required
 1x Servo Motor (SG90 used here)
